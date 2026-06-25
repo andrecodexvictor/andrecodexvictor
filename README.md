@@ -155,9 +155,8 @@ Combino experiência em vendas, gestão de equipes e marketing digital com solu�
 </p>
 
 <p align="center">
-  <img src="./f1-car.svg" alt="Silver Formula 1 car animation" width="100%" />
+  <img src="./f1-car.svg" alt="Racing cars animation" width="100%" />
 </p>
-
 ---
 
 ## 📫 Contact / Contato
