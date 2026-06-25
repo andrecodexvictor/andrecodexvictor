@@ -1,6 +1,6 @@
-<!-- PROFILE HEADER WITH LIGHT ANIMATION -->
+<!-- PROFILE HEADER -->
 <p align="center">
-  <img src="https://readme-typing-svg.demolab.com?font=Fira+Code&size=22&pause=1000&color=00C853&center=true&vCenter=true&width=600&lines=Andre+Victor+Andrade+Oliveira+Santos;Full+Stack+Developer+%26+Applied+AI+Architect;Building+agentic+systems+and+automation+flows" alt="Typing SVG" />
+  <img src="https://readme-typing-svg.demolab.com?font=Fira+Code&size=22&pause=1000&color=00C853&center=true&vCenter=true&width=600&lines=Andre+Victor+Andrade+Oliveira+Santos;Full+Stack+Developer+%26+Applied+AI+Specialist;Agentic+AI+%26+Automation" alt="Typing SVG" />
 </p>
 
 <h1 align="center">Hello, world! / Olá, mundo! 👋</h1>
@@ -18,94 +18,108 @@
 
 ## 🇺🇸 About me / 🇧🇷 Sobre mim
 
-**EN:** I am a full‑stack developer and applied AI architect, focused on:
+**EN:**
 
-- Designing and implementing intelligent agents and automation workflows (n8n, LLMs, RAG, integrations).
-- Building modern web applications with TypeScript/JavaScript (Node.js, React, Next.js) and PHP.
-- Connecting data and systems (REST APIs, relational databases, backoffice automation).
+Full‑stack developer and applied AI specialist, focused on:
 
-I combine sales, communication and management experience with technical solutions that deliver real business impact. I have a solid background in Python and data analysis, using agile methodologies and AI tools to optimize processes and create practical solutions.
+- Agentic AI systems and automation workflows (LLMs, LangChain, LangGraph, CrewAI, n8n).
+- Web applications with TypeScript/JavaScript (Node.js, React, Next.js) and Python (Django).
+- Data‑driven decisions using SQL/NoSQL databases, vector databases and semantic search.
 
-**PT:** Sou desenvolvedor full stack e arquiteto de IA aplicada, focado em:
+I combine sales and team‑leadership experience with technical solutions that improve small/medium business processes.
 
-- Construção de agentes inteligentes e fluxos de automação (n8n, LLMs, RAG, integrações).
-- Aplicações web com TypeScript/JavaScript (Node.js, React, Next.js) e PHP.
-- Integração de dados e sistemas (APIs REST, bancos relacionais, automações de backoffice).
+**PT:**
 
-Combino experiência em vendas, gestão de equipes e marketing digital com soluções técnicas orientadas a resultado. Possuo base sólida em Python e análise de dados, aplicando metodologias ágeis e ferramentas de IA para otimizar processos e criar soluções práticas.
+Desenvolvedor full stack e especialista em IA aplicada, focado em:
+
+- Sistemas de IA agentic e fluxos de automação (LLMs, LangChain, LangGraph, CrewAI, n8n).
+- Aplicações web com TypeScript/JavaScript (Node.js, React, Next.js) e Python (Django).
+- Decisão orientada a dados usando bancos SQL/NoSQL, bancos vetoriais e busca semântica.
+
+Combino experiência em vendas, gestão de equipes e marketing digital com soluções técnicas que melhoram processos de pequenas e médias empresas.
 
 ---
 
-## 🛠 Tech Stack
+## 🛠 Tech stack & frameworks
 
 <p align="center">
-  <!-- Languages -->
+  <!-- Core languages -->
   <img src="https://img.shields.io/badge/TypeScript-3178C6?style=for-the-badge&logo=typescript&logoColor=white" />
   <img src="https://img.shields.io/badge/JavaScript-F7DF1E?style=for-the-badge&logo=javascript&logoColor=black" />
   <img src="https://img.shields.io/badge/Python-3776AB?style=for-the-badge&logo=python&logoColor=white" />
-  <img src="https://img.shields.io/badge/PHP-777BB4?style=for-the-badge&logo=php&logoColor=white" />
+  <img src="https://img.shields.io/badge/Kotlin-7F52FF?style=for-the-badge&logo=kotlin&logoColor=white" />
 </p>
 
 <p align="center">
-  <!-- Web & Backend -->
+  <!-- Web & backend -->
   <img src="https://img.shields.io/badge/Node.js-339933?style=for-the-badge&logo=node.js&logoColor=white" />
   <img src="https://img.shields.io/badge/React-61DAFB?style=for-the-badge&logo=react&logoColor=black" />
   <img src="https://img.shields.io/badge/Next.js-000000?style=for-the-badge&logo=next.js&logoColor=white" />
-  <img src="https://img.shields.io/badge/Express.js-000000?style=for-the-badge&logo=express&logoColor=white" />
+  <img src="https://img.shields.io/badge/Angular-DD0031?style=for-the-badge&logo=angular&logoColor=white" />
+  <img src="https://img.shields.io/badge/Django-092E20?style=for-the-badge&logo=django&logoColor=white" />
 </p>
 
 <p align="center">
-  <!-- Data & Infra -->
+  <!-- Data & infra -->
   <img src="https://img.shields.io/badge/MySQL-4479A1?style=for-the-badge&logo=mysql&logoColor=white" />
   <img src="https://img.shields.io/badge/PostgreSQL-4169E1?style=for-the-badge&logo=postgresql&logoColor=white" />
+  <img src="https://img.shields.io/badge/MongoDB-47A248?style=for-the-badge&logo=mongodb&logoColor=white" />
+  <img src="https://img.shields.io/badge/Prisma-2D3748?style=for-the-badge&logo=prisma&logoColor=white" />
+  <img src="https://img.shields.io/badge/Vector%20DBs-FF6F00?style=for-the-badge&logo=google&logoColor=white" />
+  <img src="https://img.shields.io/badge/Pandas-150458?style=for-the-badge&logo=pandas&logoColor=white" />
   <img src="https://img.shields.io/badge/Docker-2496ED?style=for-the-badge&logo=docker&logoColor=white" />
 </p>
 
 <p align="center">
-  <!-- AI & Automation -->
+  <!-- LLMs & agent frameworks -->
   <img src="https://img.shields.io/badge/LLMs-000000?style=for-the-badge&logo=openai&logoColor=white" />
+  <img src="https://img.shields.io/badge/LangChain-1C3C3C?style=for-the-badge&logo=langchain&logoColor=white" />
+  <img src="https://img.shields.io/badge/LangGraph-0F172A?style=for-the-badge&logo=graphql&logoColor=white" />
+  <img src="https://img.shields.io/badge/CrewAI-1A4EC6?style=for-the-badge&logo=python&logoColor=white" />
   <img src="https://img.shields.io/badge/n8n-1A4EC6?style=for-the-badge&logo=n8n&logoColor=white" />
   <img src="https://img.shields.io/badge/RAG-FF6F00?style=for-the-badge&logo=google&logoColor=white" />
 </p>
 
----
-
-## 📌 Featured Projects / Projetos em destaque
-
-> Replace the texts and links below with your actual repositories and specific details.
-> Substitua os textos e links abaixo pelos seus repositórios reais e detalhes específicos.
-
-### 1. Adaptive Management Framework (Undergraduate Thesis) / Framework de Gestão Adaptativa (TCC)
-
-**EN:** Adaptive management framework for small and medium businesses, focused on process monitoring, decision support and automation. Used as the conceptual and technical base for agent-based solutions and internal ADK-style architectures.
-**PT:** Framework de gestão adaptativa para pequenas e médias empresas, focado em monitoramento de processos, apoio à decisão e automação. Utilizado como base conceitual e técnica para soluções com agentes e arquiteturas internas estilo ADK.
-
-- 🔗 Repo: `[ADD YOUR FRAMEWORK REPO LINK HERE / ADICIONE AQUI O LINK DO REPOSITÓRIO DO FRAMEWORK]`
-
-### 2. Agentic Toolkit for SMBs / Toolkit Agentic para PMEs
-
-**EN:** Modular agent and automation toolkit derived from the management framework, with structured prompts, specs and MD documentation. Implements agent-friendly repository patterns (entry files, docs, task plans).
-**PT:** Toolkit modular de agentes e automações derivado do framework de gestão, com prompts estruturados, especificações e documentação em MD. Implementa padrões de repositório "amigos de agentes" (arquivos de entrada, docs, planos de tarefas).
-
-- 🔗 Repo: `[ADD YOUR TOOLKIT REPO LINK HERE / ADICIONE AQUI O LINK DO REPOSITÓRIO DO TOOLKIT]`
-
-### 3. AI Agents & Automation Flows (n8n + LLMs) / Agentes de IA & Fluxos de Automação (n8n + LLMs)
-
-**EN:** Set of AI agents and n8n workflows for sales, support and internal operations, integrating LLMs, APIs and databases to reduce manual work in repetitive tasks.
-**PT:** Conjunto de agentes de IA e fluxos n8n voltados a vendas, atendimento e operações internas, integrando LLMs, APIs e bancos de dados para reduzir trabalho manual em tarefas repetitivas.
-
-- 🔗 Repo: `[ADD YOUR AUTOMATION REPO LINK HERE / ADICIONE AQUI O LINK DO REPOSITÓRIO DE AUTOMAÇÕES]`
-
-### 4. Oracle Next Education (ONE) – Intelligent Agents (Side Project)
-
-**EN:** Side project built during Oracle Next Education (ONE) Intelligent Agents immersion, exploring practical agent deployment and HR use cases (Telegram bot, MySQL, RAG). Not an active main focus, but part of my learning journey.
-**PT:** Projeto paralelo desenvolvido durante a imersão Oracle Next Education (ONE) em Agentes Inteligentes, explorando implantação prática de agentes e casos de uso em RH (bot no Telegram, MySQL, RAG). Não é foco principal atual, mas parte da minha jornada de aprendizado.
-
-- 🔗 Repo: `[ADD YOUR ONE-RELATED REPO LINK HERE / ADICIONE AQUI O LINK DO REPOSITÓRIO RELACIONADO AO ONE]`
+> **EN:** Main focus: TypeScript/Node, Python/Django, data (SQL/NoSQL, vector DBs) and agent frameworks (LangChain, LangGraph, CrewAI, n8n).  
+> **PT:** Foco principal: TypeScript/Node, Python/Django, dados (SQL/NoSQL, bancos vetoriais) e frameworks de agentes (LangChain, LangGraph, CrewAI, n8n).
 
 ---
 
-## 📊 GitHub Stats
+## 🧠 Agentic & AI patterns
+
+**EN:**
+
+- Loop engineering and spec‑driven development for agents and apps, using Markdown specs (PRDs, task graphs, prompts) as the source of truth.  
+- Experiments with fine‑tuning, ML pipelines and a new neural network specification combining feedback loops and agent orchestration.  
+- Personal projects connecting AI agents to sales and growth workflows.
+
+**PT:**
+
+- Loop engineering e spec‑driven development para agentes e aplicações, usando especificações em Markdown (PRDs, grafos de tarefas, prompts) como fonte de verdade.  
+- Experimentos com fine‑tuning, pipelines de ML e uma nova especificação de rede neural combinando loops de feedback e orquestração agentic.  
+- Projetos pessoais conectando agentes de IA com fluxos de vendas e crescimento.
+
+---
+
+## 📌 Featured projects / Projetos em destaque
+
+**EN:**
+
+- Adaptive Management Framework (Undergraduate thesis): management and automation framework for small/medium businesses, used as the base for agent toolkits.  
+- Agentic Toolkit for SMBs: modular agent and automation toolkit derived from the framework, with structured prompts, specs and Markdown docs.  
+- AI Agents & Automation Flows (n8n + LLMs): agents and workflows for sales, support and internal operations, integrating LLMs, APIs and databases.  
+- Oracle Next Education (ONE) – Intelligent Agents: side project exploring HR use cases with Telegram, MySQL and RAG.
+
+**PT:**
+
+- Framework de Gestão Adaptativa (TCC): framework de gestão e automação para PMEs, usado como base para toolkits de agentes.  
+- Toolkit Agentic para PMEs: toolkit modular de agentes e automações derivado do framework, com prompts estruturados, especificações e docs em Markdown.  
+- Agentes de IA & Fluxos de Automação (n8n + LLMs): agentes e fluxos para vendas, atendimento e operações internas, integrando LLMs, APIs e bancos de dados.  
+- Oracle Next Education (ONE) – Agentes Inteligentes: projeto paralelo explorando casos de uso de RH com Telegram, MySQL e RAG.
+
+---
+
+## 📊 GitHub stats
 
 <p align="center">
   <img src="https://github-readme-stats.vercel.app/api?username=andrecodexvictor&show_icons=true&theme=radical" alt="GitHub Stats" />
