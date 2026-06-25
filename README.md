@@ -156,7 +156,8 @@ Combino experiência em vendas, gestão de equipes e marketing digital com solu�
 
 
 <p align="center">
-  <img src="./f1-car.svg" alt="f1" width="100%" />
+  <img src="./f1-car.svg" alt="f1" width="100%"/>
+  ![F1 Banner](f1-car.svg?v=2)
 </p>
 
 ---
