@@ -1,0 +1,120 @@
+<svg width="1200" height="260" viewBox="0 0 1200 260" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Three racing cars chasing each other on a track">
+  <!-- Fundo -->
+  <rect width="1200" height="260" fill="#05070C" />
+  <linearGradient id="trackGrad" x1="0" y1="0" x2="0" y2="1">
+    <stop offset="0" stop-color="#222733" />
+    <stop offset="1" stop-color="#11141D" />
+  </linearGradient>
+
+  <!-- Pista -->
+  <g transform="translate(0,150)">
+    <rect x="0" y="0" width="1200" height="70" fill="url(#trackGrad)" />
+    <rect x="0" y="30" width="1200" height="6" fill="#FFFFFF" opacity="0.15" />
+    <!-- Faixa tracejada central -->
+    <g stroke="#F9FAFF" stroke-width="5" stroke-linecap="round" opacity="0.8">
+      <line x1="20"  y1="33" x2="90"  y2="33" />
+      <line x1="140" y1="33" x2="210" y2="33" />
+      <line x1="260" y1="33" x2="330" y2="33" />
+      <line x1="380" y1="33" x2="450" y2="33" />
+      <line x1="500" y1="33" x2="570" y2="33" />
+      <line x1="620" y1="33" x2="690" y2="33" />
+      <line x1="740" y1="33" x2="810" y2="33" />
+      <line x1="860" y1="33" x2="930" y2="33" />
+      <line x1="980" y1="33" x2="1050" y2="33" />
+      <line x1="1100" y1="33" x2="1170" y2="33" />
+    </g>
+  </g>
+
+  <!-- Definição do “carro base” (silhueta de F1) -->
+  <symbol id="f1car" viewBox="0 0 320 110">
+    <!-- sombra -->
+    <ellipse cx="160" cy="92" rx="100" ry="10" fill="#000000" opacity="0.35" />
+    <g transform="translate(20,20)">
+      <!-- asa dianteira -->
+      <path d="M0 42 L22 32 L46 32 L46 50 L22 50 Z" fill="#D0D3DB" />
+      <!-- bico -->
+      <path d="M46 36 L88 30 L120 32 L120 46 L80 50 L46 46 Z" fill="#C0C4CF" />
+      <!-- chassi -->
+      <path d="M80 30 L178 28 L212 44 L288 44 L300 50 L288 56 L210 56 L178 70 L108 70 L80 58 Z"
+            fill="currentColor" />
+      <!-- cockpit -->
+      <path d="M130 28 L164 28 L178 44 L132 44 Z" fill="#7FD8FF" />
+      <!-- halo -->
+      <rect x="148" y="26" width="10" height="18" rx="4" fill="#151924" />
+      <!-- asa traseira -->
+      <path d="M260 30 L302 30 L312 42 L302 54 L260 54 Z" fill="#D0D3DB" />
+      <!-- detalhes laterais -->
+      <rect x="112" y="50" width="40" height="6" rx="3" fill="#F9FAFB" opacity="0.9" />
+      <rect x="194" y="38" width="32" height="5" rx="2.5" fill="#FFE08A" opacity="0.9" />
+      <!-- rodas -->
+      <g>
+        <g>
+          <circle cx="86" cy="76" r="16" fill="#05070C" />
+          <circle cx="86" cy="76" r="9" fill="#323848" />
+          <circle cx="86" cy="76" r="3" fill="#E4E9F5" />
+          <animateTransform attributeName="transform" type="rotate"
+                            from="0 86 76" to="360 86 76"
+                            dur="0.5s" repeatCount="indefinite" />
+        </g>
+        <g>
+          <circle cx="238" cy="76" r="16" fill="#05070C" />
+          <circle cx="238" cy="76" r="9" fill="#323848" />
+          <circle cx="238" cy="76" r="3" fill="#E4E9F5" />
+          <animateTransform attributeName="transform" type="rotate"
+                            from="0 238 76" to="360 238 76"
+                            dur="0.7s" repeatCount="indefinite" />
+        </g>
+      </g>
+      <!-- farol -->
+      <circle cx="300" cy="42" r="3.5" fill="#8AF0FF" />
+    </g>
+  </symbol>
+
+  <!-- Carro 1 - cor “Ferrari” -->
+  <g transform="translate(0,0)">
+    <g transform="translate(-400,0)">
+      <use href="#f1car" x="0" y="130" fill="url(#car1)" />
+      <animateTransform attributeName="transform" type="translate"
+                        from="-400 0" to="1300 0"
+                        dur="10s" repeatCount="indefinite" />
+    </g>
+  </g>
+
+  <!-- Carro 2 - prateado -->
+  <g transform="translate(0,20)">
+    <g transform="translate(-800,0)">
+      <use href="#f1car" x="0" y="130" fill="url(#car2)" />
+      <animateTransform attributeName="transform" type="translate"
+                        from="-800 0" to="900 0"
+                        dur="10s" repeatCount="indefinite" />
+    </g>
+  </g>
+
+  <!-- Carro 3 - azul/amarelo -->
+  <g transform="translate(0,40)">
+    <g transform="translate(-1200,0)">
+      <use href="#f1car" x="0" y="130" fill="url(#car3)" />
+      <animateTransform attributeName="transform" type="translate"
+                        from="-1200 0" to="500 0"
+                        dur="10s" repeatCount="indefinite" />
+    </g>
+  </g>
+
+  <!-- Gradientes de cor dos carros -->
+  <linearGradient id="car1" x1="0" y1="0" x2="1" y2="1">
+    <stop offset="0" stop-color="#FF1B2D" />
+    <stop offset="0.5" stop-color="#C10F22" />
+    <stop offset="1" stop-color="#FF5C5C" />
+  </linearGradient>
+  <linearGradient id="car2" x1="0" y1="0" x2="1" y2="1">
+    <stop offset="0" stop-color="#F4F7FB" />
+    <stop offset="0.3" stop-color="#C9D0DA" />
+    <stop offset="0.7" stop-color="#87909C" />
+    <stop offset="1" stop-color="#E4E9F2" />
+  </linearGradient>
+  <linearGradient id="car3" x1="0" y1="0" x2="1" y2="1">
+    <stop offset="0" stop-color="#1C2CFF" />
+    <stop offset="0.5" stop-color="#081467" />
+    <stop offset="1" stop-color="#FFCC00" />
+  </linearGradient>
+</svg>
