@@ -154,8 +154,8 @@ Combino experiência em vendas, gestão de equipes e marketing digital com solu�
   <img src="https://github-readme-stats.vercel.app/api/top-langs/?username=andrecodexvictor&layout=compact&theme=radical" alt="Top Languages" />
 </p>
 
-<<p align="center">
-  <img src="./assets/f1-car.svg" alt="Silver Formula 1 car animation" width="100%" />
+<p align="center">
+  <img src="./f1-car.svg" alt="Silver Formula 1 car animation" width="100%" />
 </p>
 
 ---
