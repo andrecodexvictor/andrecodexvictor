@@ -1,56 +1,50 @@
-<svg width="1200" height="280" viewBox="0 0 1200 280" fill="none" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Silver Formula 1 car racing on a track">
+<svg width="1200" height="260" viewBox="0 0 1200 260" fill="none" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Three racing cars chasing each other on a track">
   <defs>
-    <linearGradient id="bg" x1="0" y1="0" x2="1200" y2="280" gradientUnits="userSpaceOnUse">
-      <stop offset="0" stop-color="#06070B"/>
-      <stop offset="0.5" stop-color="#111522"/>
-      <stop offset="1" stop-color="#050608"/>
+    <!-- Fundo e pista -->
+    earGradient id="bg" x1="0" y1="0" x2="1200" y2="260" gradientUnits="userSpaceOnUse">
+      <stop offset="0" stop-color="#05060A"/>
+      <stop offset="0.4" stop-color="#0E1220"/>
+      <stop offset="1" stop-color="#020306"/>
     </linearGradient>
 
-    <linearGradient id="silverBody" x1="0" y1="0" x2="0" y2="90" gradientUnits="userSpaceOnUse">
-      <stop offset="0" stop-color="#F8FBFF"/>
-      <stop offset="0.18" stop-color="#DDE3EA"/>
-      <stop offset="0.45" stop-color="#AEB7C2"/>
-      <stop offset="0.7" stop-color="#7F8994"/>
-      <stop offset="1" stop-color="#E9EEF5"/>
+    earGradient id="track" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#1E2430"/>
+      <stop offset="1" stop-color="#11151E"/>
     </linearGradient>
 
-    <linearGradient id="silverDark" x1="0" y1="0" x2="1" y2="1">
-      <stop offset="0" stop-color="#5E6670"/>
-      <stop offset="1" stop-color="#2D333B"/>
+    <!-- Cores dos carros (sem texto de marca) -->
+    earGradient id="carRed" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#FF1B2D"/>
+      <stop offset="0.5" stop-color="#C10F22"/>
+      <stop offset="1" stop-color="#FF5C5C"/>
     </linearGradient>
 
-    <linearGradient id="cockpit" x1="0" y1="0" x2="1" y2="1">
+    earGradient id="carSilver" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#F4F7FB"/>
+      <stop offset="0.3" stop-color="#C9D0DA"/>
+      <stop offset="0.7" stop-color="#87909C"/>
+      <stop offset="1" stop-color="#E4E9F2"/>
+    </linearGradient>
+
+    earGradient id="carBlue" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#1C2CFF"/>
+      <stop offset="0.5" stop-color="#081467"/>
+      <stop offset="1" stop-color="#FFCC00"/>
+    </linearGradient>
+
+    earGradient id="cockpitGlass" x1="0" y1="0" x2="1" y2="1">
       <stop offset="0" stop-color="#8DEBFF"/>
       <stop offset="1" stop-color="#2E7CF6"/>
     </linearGradient>
 
-    <linearGradient id="trackGlow" x1="0" y1="0" x2="1" y2="0">
-      <stop offset="0" stop-color="#FF2D55" stop-opacity="0"/>
-      <stop offset="0.45" stop-color="#FF2D55" stop-opacity="0.35"/>
-      <stop offset="1" stop-color="#FFD166" stop-opacity="0.9"/>
-    </linearGradient>
-
-    <linearGradient id="speed" x1="1" y1="0" x2="0" y2="0">
+    earGradient id="speedLine" x1="1" y1="0" x2="0" y2="0">
       <stop offset="0" stop-color="#B8F3FF" stop-opacity="0.95"/>
-      <stop offset="0.45" stop-color="#6AAEFF" stop-opacity="0.35"/>
+      <stop offset="0.5" stop-color="#6AAEFF" stop-opacity="0.35"/>
       <stop offset="1" stop-color="#6AAEFF" stop-opacity="0"/>
     </linearGradient>
 
-    <radialGradient id="spot" cx="0" cy="0" r="1" gradientUnits="userSpaceOnUse" gradientTransform="translate(930 62) rotate(90) scale(120 250)">
-      <stop stop-color="#3D4A77" stop-opacity="0.45"/>
-      <stop offset="1" stop-color="#3D4A77" stop-opacity="0"/>
-    </radialGradient>
-
-    <filter id="blurGlow" x="-50%" y="-50%" width="200%" height="200%">
-      <feGaussianBlur stdDeviation="8" result="b"/>
-      <feMerge>
-        <feMergeNode in="b"/>
-        <feMergeNode in="SourceGraphic"/>
-      </feMerge>
-    </filter>
-
-    <filter id="soft" x="-50%" y="-50%" width="200%" height="200%">
-      <feGaussianBlur stdDeviation="3" result="b"/>
+    <filter id="glow" x="-40%" y="-40%" width="180%" height="180%">
+      <feGaussianBlur stdDeviation="4" result="b"/>
       <feMerge>
         <feMergeNode in="b"/>
         <feMergeNode in="SourceGraphic"/>
@@ -58,8 +52,18 @@
     </filter>
 
     <style>
-      .carWrap {
-        animation: drive 7.5s cubic-bezier(.55,.08,.38,.98) infinite;
+      .carTrain {
+        animation: move 9s linear infinite;
+      }
+
+      .carFerrari {
+        animation-delay: 0s;
+      }
+      .carMercedes {
+        animation-delay: -3s;
+      }
+      .carBlue {
+        animation-delay: -6s;
       }
 
       .wheelFast, .wheelSlow {
@@ -67,33 +71,34 @@
         transform-origin: center;
       }
 
-      .wheelFast { animation: spin .42s linear infinite; }
-      .wheelSlow { animation: spin .65s linear infinite; }
+      .wheelFast {
+        animation: spin 0.42s linear infinite;
+      }
+
+      .wheelSlow {
+        animation: spin 0.64s linear infinite;
+      }
 
       .carFloat {
-        animation: float .34s ease-in-out infinite alternate;
+        animation: float 0.32s ease-in-out infinite alternate;
       }
 
-      .trailPulse {
-        animation: pulse 1s ease-in-out infinite alternate;
+      .speedTrail {
+        animation: trailPulse 0.9s ease-in-out infinite alternate;
       }
 
-      .bgA { animation: bgMoveA 2s linear infinite; }
-      .bgB { animation: bgMoveB 3s linear infinite; }
-      .bgC { animation: bgMoveA 4s linear infinite; }
-      .blink { animation: blink .9s ease-in-out infinite alternate; }
+      .headLight {
+        animation: blink 0.8s ease-in-out infinite alternate;
+      }
+
+      @keyframes move {
+        0%   { transform: translateX(-420px); }
+        100% { transform: translateX(1320px); }
+      }
 
       @keyframes spin {
         from { transform: rotate(0deg); }
-        to { transform: rotate(360deg); }
-      }
-
-      @keyframes drive {
-        0%   { transform: translateX(-390px); }
-        12%  { transform: translateX(120px); }
-        50%  { transform: translateX(470px); }
-        88%  { transform: translateX(910px); }
-        100% { transform: translateX(1320px); }
+        to   { transform: rotate(360deg); }
       }
 
       @keyframes float {
@@ -101,112 +106,156 @@
         to   { transform: translateY(-2px); }
       }
 
-      @keyframes pulse {
-        from { opacity: .35; }
+      @keyframes trailPulse {
+        from { opacity: 0.3; }
         to   { opacity: 1; }
       }
 
       @keyframes blink {
-        from { opacity: .45; }
+        from { opacity: 0.4; }
         to   { opacity: 1; }
       }
 
-      @keyframes bgMoveA {
-        from { transform: translateX(0); }
-        to   { transform: translateX(-260px); }
-      }
-
-      @keyframes bgMoveB {
-        from { transform: translateX(0); }
-        to   { transform: translateX(-340px); }
-      }
-
       @media (prefers-reduced-motion: reduce) {
-        .carWrap, .wheelFast, .wheelSlow, .carFloat, .trailPulse, .bgA, .bgB, .bgC, .blink {
+        .carTrain, .wheelFast, .wheelSlow, .carFloat, .speedTrail, .headLight {
           animation: none !important;
         }
       }
     </style>
   </defs>
 
-  <rect width="1200" height="280" rx="26" fill="url(#bg)"/>
-  <rect width="1200" height="280" rx="26" fill="url(#spot)"/>
+  <!-- Fundo -->
+  <rect width="1200" height="260" rx="24" fill="url(#bg)"/>
 
-  <g opacity="0.25">
-    <rect class="bgA" x="70" y="44" width="180" height="4" rx="2" fill="#7F8FC7"/>
-    <rect class="bgB" x="350" y="72" width="250" height="4" rx="2" fill="#7F8FC7"/>
-    <rect class="bgC" x="800" y="52" width="160" height="4" rx="2" fill="#7F8FC7"/>
-    <rect class="bgA" x="1010" y="84" width="120" height="4" rx="2" fill="#7F8FC7"/>
+  <!-- Pista -->
+  <g transform="translate(0,150)">
+    <rect x="0" y="0" width="1200" height="70" fill="url(#track)"/>
+    <rect x="0" y="30" width="1200" height="6" fill="#FFFFFF" opacity="0.18"/>
+
+    <!-- Faixa tracejada central -->
+    <g stroke="#F8FAFF" stroke-width="5" stroke-linecap="round" opacity="0.75">
+      e x1="20"  y1="33" x2="90"  y2="33"/>
+      e x1="140" y1="33" x2="210" y2="33"/>
+      e x1="260" y1="33" x2="330" y2="33"/>
+      e x1="380" y1="33" x2="450" y2="33"/>
+      e x1="500" y1="33" x2="570" y2="33"/>
+      e x1="620" y1="33" x2="690" y2="33"/>
+      e x1="740" y1="33" x2="810" y2="33"/>
+      e x1="860" y1="33" x2="930" y2="33"/>
+      e x1="980" y1="33" x2="1050" y2="33"/>
+      e x1="1100" y1="33" x2="1170" y2="33"/>
+    </g>
   </g>
 
-  <g filter="url(#soft)" opacity="0.95">
-    <text x="56" y="58" fill="#F4F7FF" font-size="28" font-family="Segoe UI, Arial, sans-serif" font-weight="800">FORMULA 1 //</text>
-    <text x="56" y="88" fill="#9FD4FF" font-size="14" font-family="Segoe UI, Arial, sans-serif" letter-spacing="4">SILVER MACHINE • FULL SPEED</text>
-  </g>
+  <!-- Grupo dos três carros -->
+  <g filter="url(#glow)">
+    <!-- Carro 1 - vermelho, na frente -->
+    <g class="carTrain carFerrari" transform="translate(0,0)">
+      <g class="speedTrail">
+        <path d="M130 188 C 80 186, 40 190, -80 200" stroke="url(#speedLine)" stroke-width="8" stroke-linecap="round"/>
+      </g>
+      <g class="carFloat" transform="translate(80,130)">
+        <!-- sombra -->
+        <ellipse cx="140" cy="84" rx="90" ry="9" fill="#000000" opacity="0.35"/>
+        <!-- corpo principal -->
+        <g transform="translate(40,40)">
+          <!-- asa dianteira -->
+          <path d="M0 40 L24 32 L46 32 L46 48 L24 48 Z" fill="#D2D5DD"/>
+          <!-- bico longo -->
+          <path d="M46 36 L88 32 L120 34 L120 45 L80 48 L46 46 Z" fill="url(#carRed)"/>
+          <!-- chassi baixo -->
+          <path d="M80 32 L178 30 L212 46 L288 46 L300 52 L288 58 L210 58 L178 72 L108 72 L80 60 Z" fill="url(#carRed)"/>
+          <!-- cockpit -->
+          <path d="M130 30 L164 30 L178 46 L132 46 Z" fill="url(#cockpitGlass)"/>
+          <!-- halo / proteção -->
+          <rect x="148" y="28" width="10" height="18" rx="4" fill="#161921"/>
+          <!-- asa traseira -->
+          <path d="M260 32 L302 32 L312 44 L302 56 L260 56 Z" fill="#D2D5DD"/>
+          <!-- detalhes laterais -->
+          <rect x="112" y="52" width="40" height="6" rx="3" fill="#FFF2C4" opacity="0.9"/>
+          <rect x="194" y="40" width="32" height="5" rx="2.5" fill="#FFE08A" opacity="0.9"/>
 
-  <g opacity="0.92">
-    <rect x="0" y="205" width="1200" height="42" fill="#242936"/>
-    <rect x="0" y="203" width="1200" height="5" fill="#ECEFF7"/>
-    <rect x="0" y="247" width="1200" height="33" fill="#141821"/>
-  </g>
+          <!-- rodas -->
+          <g class="wheelFast">
+            ircle cx="86" cy="74" r="16" fill="#080B12"/>
+            ircle cx="86" cy="74" r="9" fill="#2E3748"/>
+            ircle cx="86" cy="74" r="3" fill="#DDE4F5"/>
+          </g>
+          <g class="wheelSlow">
+            ircle cx="238" cy="74" r="16" fill="#080B12"/>
+            ircle cx="238" cy="74" r="9" fill="#2E3748"/>
+            ircle cx="238" cy="74" r="3" fill="#DDE4F5"/>
+          </g>
 
-  <g opacity="0.95">
-    <rect x="32" y="221" width="78" height="7" rx="3.5" fill="#FFFFFF"/>
-    <rect x="152" y="221" width="78" height="7" rx="3.5" fill="#FFFFFF"/>
-    <rect x="272" y="221" width="78" height="7" rx="3.5" fill="#FFFFFF"/>
-    <rect x="392" y="221" width="78" height="7" rx="3.5" fill="#FFFFFF"/>
-    <rect x="512" y="221" width="78" height="7" rx="3.5" fill="#FFFFFF"/>
-    <rect x="632" y="221" width="78" height="7" rx="3.5" fill="#FFFFFF"/>
-    <rect x="752" y="221" width="78" height="7" rx="3.5" fill="#FFFFFF"/>
-    <rect x="872" y="221" width="78" height="7" rx="3.5" fill="#FFFFFF"/>
-    <rect x="992" y="221" width="78" height="7" rx="3.5" fill="#FFFFFF"/>
-    <rect x="1112" y="221" width="56" height="7" rx="3.5" fill="#FFFFFF"/>
-  </g>
-
-  <g class="carWrap">
-    <g class="trailPulse" filter="url(#blurGlow)">
-      <path d="M120 155 C 50 154, 0 160, -110 170" stroke="url(#speed)" stroke-width="12" stroke-linecap="round"/>
-      <path d="M98 139 C 10 139, -30 145, -150 150" stroke="url(#trackGlow)" stroke-width="4" stroke-linecap="round" opacity="0.9"/>
-      <path d="M90 170 C 15 170, -15 173, -130 184" stroke="url(#speed)" stroke-width="4" stroke-linecap="round" opacity="0.7"/>
+          <!-- farol / luz dianteira -->
+          ircle class="headLight" cx="300" cy="44" r="3.5" fill="#8AF0FF"/>
+        </g>
+      </g>
     </g>
 
-    <g class="carFloat">
-      <ellipse cx="228" cy="194" rx="128" ry="11" fill="#000000" opacity="0.35"/>
+    <!-- Carro 2 - prateado, no meio -->
+    <g class="carTrain carMercedes" transform="translate(0,20)">
+      <g class="speedTrail">
+        <path d="M130 188 C 80 186, 40 190, -80 200" stroke="url(#speedLine)" stroke-width="7" stroke-linecap="round" opacity="0.7"/>
+      </g>
+      <g class="carFloat" transform="translate(60,138)">
+        <ellipse cx="140" cy="84" rx="90" ry="9" fill="#000000" opacity="0.32"/>
+        <g transform="translate(40,40)">
+          <path d="M0 40 L24 32 L46 32 L46 48 L24 48 Z" fill="#C4CBD6"/>
+          <path d="M46 36 L88 32 L120 34 L120 45 L80 48 L46 46 Z" fill="url(#carSilver)"/>
+          <path d="M80 32 L178 30 L212 46 L288 46 L300 52 L288 58 L210 58 L178 72 L108 72 L80 60 Z" fill="url(#carSilver)"/>
+          <path d="M130 30 L164 30 L178 46 L132 46 Z" fill="url(#cockpitGlass)"/>
+          <rect x="148" y="28" width="10" height="18" rx="4" fill="#10141C"/>
+          <path d="M260 32 L302 32 L312 44 L302 56 L260 56 Z" fill="#C4CBD6"/>
+          <rect x="112" y="52" width="40" height="6" rx="3" fill="#B8FFEB" opacity="0.9"/>
+          <rect x="194" y="40" width="32" height="5" rx="2.5" fill="#72F3C5" opacity="0.9"/>
 
-      <g transform="translate(92 110)">
-        <path d="M18 48 L0 56 L18 68 L67 68 L92 50 L156 46 L182 58 L256 58 L271 49 L327 48 L334 40 L274 30 L243 12 L149 12 L117 24 L70 28 L48 40 Z" fill="url(#silverBody)"/>
-        <path d="M154 12 L197 12 L212 35 L146 35 Z" fill="url(#silverDark)"/>
-        <path d="M150 15 L191 15 L203 32 L151 32 Z" fill="url(#cockpit)" opacity="0.95"/>
-        <path d="M17 49 L58 49 L68 30 L36 30 Z" fill="#C2CAD4"/>
-        <path d="M269 31 L333 40 L331 48 L267 47 Z" fill="#DCE3EB"/>
-        <path d="M92 50 L128 50 L145 35 L108 35 Z" fill="#FF3B30"/>
-        <rect x="185" y="19" width="38" height="7" rx="3.5" fill="#F8FBFF" opacity="0.95"/>
-        <rect x="233" y="22" width="22" height="5" rx="2.5" fill="#FFE08A" opacity="0.95"/>
-        <path d="M18 68 H60 L48 77 H12 Z" fill="#0D1118"/>
-        <path d="M236 58 H294 L312 69 H244 Z" fill="#0D1118"/>
+          <g class="wheelFast">
+            ircle cx="86" cy="74" r="16" fill="#05070C"/>
+            ircle cx="86" cy="74" r="9" fill="#2A303C"/>
+            ircle cx="86" cy="74" r="3" fill="#DDE4F5"/>
+          </g>
+          <g class="wheelSlow">
+            ircle cx="238" cy="74" r="16" fill="#05070C"/>
+            ircle cx="238" cy="74" r="9" fill="#2A303C"/>
+            ircle cx="238" cy="74" r="3" fill="#DDE4F5"/>
+          </g>
 
-        <g class="blink" filter="url(#soft)">
-          <circle cx="330" cy="42" r="4" fill="#8AE9FF"/>
+          ircle class="headLight" cx="300" cy="44" r="3.5" fill="#8AF0FF"/>
         </g>
+      </g>
+    </g>
 
-        <g class="wheelFast">
-          <circle cx="52" cy="78" r="27" fill="#0F1219"/>
-          <circle cx="52" cy="78" r="15" fill="#4C5563"/>
-          <circle cx="52" cy="78" r="4" fill="#E8EEF5"/>
-          <path d="M52 52 V104" stroke="#E8EEF5" stroke-width="3.2" stroke-linecap="round"/>
-          <path d="M26 78 H78" stroke="#E8EEF5" stroke-width="3.2" stroke-linecap="round"/>
-          <path d="M34 60 L70 96" stroke="#E8EEF5" stroke-width="2.5" stroke-linecap="round"/>
-          <path d="M70 60 L34 96" stroke="#E8EEF5" stroke-width="2.5" stroke-linecap="round"/>
-        </g>
+    <!-- Carro 3 - azul/amarelo, atrás -->
+    <g class="carTrain carBlue" transform="translate(0,40)">
+      <g class="speedTrail">
+        <path d="M130 188 C 80 186, 40 190, -80 200" stroke="url(#speedLine)" stroke-width="6" stroke-linecap="round" opacity="0.6"/>
+      </g>
+      <g class="carFloat" transform="translate(40,146)">
+        <ellipse cx="140" cy="84" rx="90" ry="9" fill="#000000" opacity="0.3"/>
+        <g transform="translate(40,40)">
+          <path d="M0 40 L24 32 L46 32 L46 48 L24 48 Z" fill="#202434"/>
+          <path d="M46 36 L88 32 L120 34 L120 45 L80 48 L46 46 Z" fill="url(#carBlue)"/>
+          <path d="M80 32 L178 30 L212 46 L288 46 L300 52 L288 58 L210 58 L178 72 L108 72 L80 60 Z" fill="url(#carBlue)"/>
+          <path d="M130 30 L164 30 L178 46 L132 46 Z" fill="url(#cockpitGlass)"/>
+          <rect x="148" y="28" width="10" height="18" rx="4" fill="#11141E"/>
+          <path d="M260 32 L302 32 L312 44 L302 56 L260 56 Z" fill="#202434"/>
+          <!-- faixa amarela lateral -->
+          <rect x="112" y="52" width="40" height="6" rx="3" fill="#FFCC00" opacity="0.95"/>
+          <rect x="194" y="40" width="32" height="5" rx="2.5" fill="#FFCC00" opacity="0.95"/>
 
-        <g class="wheelSlow">
-          <circle cx="252" cy="78" r="27" fill="#0F1219"/>
-          <circle cx="252" cy="78" r="15" fill="#4C5563"/>
-          <circle cx="252" cy="78" r="4" fill="#E8EEF5"/>
-          <path d="M252 52 V104" stroke="#E8EEF5" stroke-width="3.2" stroke-linecap="round"/>
-          <path d="M226 78 H278" stroke="#E8EEF5" stroke-width="3.2" stroke-linecap="round"/>
-          <path d="M234 60 L270 96" stroke="#E8EEF5" stroke-width="2.5" stroke-linecap="round"/>
-          <path d="M270 60 L234 96" stroke="#E8EEF5" stroke-width="2.5" stroke-linecap="round"/>
+          <g class="wheelFast">
+            ircle cx="86" cy="74" r="16" fill="#070910"/>
+            ircle cx="86" cy="74" r="9" fill="#343A4C"/>
+            ircle cx="86" cy="74" r="3" fill="#DDE4F5"/>
+          </g>
+          <g class="wheelSlow">
+            ircle cx="238" cy="74" r="16" fill="#070910"/>
+            ircle cx="238" cy="74" r="9" fill="#343A4C"/>
+            ircle cx="238" cy="74" r="3" fill="#DDE4F5"/>
+          </g>
+
+          ircle class="headLight" cx="300" cy="44" r="3.5" fill="#8AF0FF"/>
         </g>
       </g>
     </g>
