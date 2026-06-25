@@ -24,7 +24,7 @@ Full‑stack developer and applied AI specialist, focused on:
 
 - Agentic AI systems and automation workflows (LLMs, LangChain, LangGraph, CrewAI, n8n).
 - Web applications with TypeScript/JavaScript (Node.js, React, Next.js) and Python (Django).
-- Data‑driven decisions using SQL/NoSQL databases, vector databases and semantic search.
+- Data‑driven decisions using SQL/NoSQL databases, vector databases (ChromaDB, Pinecone) and semantic search.
 
 I combine sales and team‑leadership experience with technical solutions that improve small/medium business processes.
 
@@ -34,7 +34,7 @@ Desenvolvedor full stack e especialista em IA aplicada, focado em:
 
 - Sistemas de IA agentic e fluxos de automação (LLMs, LangChain, LangGraph, CrewAI, n8n).
 - Aplicações web com TypeScript/JavaScript (Node.js, React, Next.js) e Python (Django).
-- Decisão orientada a dados usando bancos SQL/NoSQL, bancos vetoriais e busca semântica.
+- Decisão orientada a dados usando bancos SQL/NoSQL, bancos vetoriais (ChromaDB, Pinecone) e busca semântica.
 
 Combino experiência em vendas, gestão de equipes e marketing digital com soluções técnicas que melhoram processos de pequenas e médias empresas.
 
@@ -80,8 +80,8 @@ Combino experiência em vendas, gestão de equipes e marketing digital com solu�
   <img src="https://img.shields.io/badge/RAG-FF6F00?style=for-the-badge&logo=google&logoColor=white" />
 </p>
 
-> **EN:** Main focus: TypeScript/Node, Python/Django, data (SQL/NoSQL, vector DBs) and agent frameworks (LangChain, LangGraph, CrewAI, n8n).  
-> **PT:** Foco principal: TypeScript/Node, Python/Django, dados (SQL/NoSQL, bancos vetoriais) e frameworks de agentes (LangChain, LangGraph, CrewAI, n8n).
+> **EN:** Main focus: TypeScript/Node, Python/Django, data (SQL/NoSQL, vector DBs such as ChromaDB and Pinecone) and agent frameworks (LangChain, LangGraph, CrewAI, n8n).  
+> **PT:** Foco principal: TypeScript/Node, Python/Django, dados (SQL/NoSQL, bancos vetoriais como ChromaDB e Pinecone) e frameworks de agentes (LangChain, LangGraph, CrewAI, n8n).
 
 ---
 
@@ -140,7 +140,7 @@ Combino experiência em vendas, gestão de equipes e marketing digital com solu�
 **EN:**
 
 - 📍 Bahia, Brazil  
-- ✉️ Email: `your-email@example.com`  
+- ✉️ Email: `andrevictorandrade@gmail.com`  
 - 💼 LinkedIn: [André Victor](https://www.linkedin.com/in/andre-victor-andrade-oliveira-santos-22b142208)
 
 If you want to collaborate on AI agents, automation flows or full‑stack applications, feel free to reach out.
@@ -148,7 +148,7 @@ If you want to collaborate on AI agents, automation flows or full‑stack applic
 **PT:**
 
 - 📍 Bahia, Brasil  
-- ✉️ E-mail: `seu-email@exemplo.com`  
+- ✉️ E-mail: `andrevictorandrade@hotmail.com`  
 - 💼 LinkedIn: [André Victor](https://www.linkedin.com/in/andre-victor-andrade-oliveira-santos-22b142208)
 
 Se quiser colaborar em agentes de IA, automações ou aplicações web, é só chamar! 😊
