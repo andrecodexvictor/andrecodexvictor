@@ -1,29 +1,214 @@
-<svg xmlns="http://www.w3.org/2000/svg" width="300" height="60" viewBox="0 0 300 60">
-  <!-- Track -->
-  <line x1="10" y1="40" x2="290" y2="40" stroke="#555" stroke-width="4" stroke-linecap="round" />
-  <!-- Car body -->
-  <rect id="car-body" x="10" y="25" width="40" height="15" rx="4" ry="4" fill="#FF0000" />
-  <!-- Front wing -->
-  <rect x="8" y="28" width="6" height="10" fill="#B00000" />
-  <!-- Rear wing -->
-  <rect x="48" y="23" width="8" height="12" fill="#B00000" />
-  <!-- Wheels -->
-  <circle cx="18" cy="42" r="5" fill="#000000" />
-  <circle cx="42" cy="42" r="5" fill="#000000" />
-  <!-- Animation: move car along the track -->
-  <animate
-    xlink:href="#car-body"
-    attributeName="x"
-    from="10"
-    to="250"
-    dur="3s"
-    repeatCount="indefinite"
-  />
-  <animate
-    xlink:href="#car-body"
-    attributeName="fill"
-    values="#FF0000;#FFFF00;#00FF00;#FF0000"
-    dur="6s"
-    repeatCount="indefinite"
-  />
+<svg width="1200" height="280" viewBox="0 0 1200 280" fill="none" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Silver Formula 1 car racing on a track">
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="1200" y2="280" gradientUnits="userSpaceOnUse">
+      <stop offset="0" stop-color="#06070B"/>
+      <stop offset="0.5" stop-color="#111522"/>
+      <stop offset="1" stop-color="#050608"/>
+    </linearGradient>
+
+    <linearGradient id="silverBody" x1="0" y1="0" x2="0" y2="90" gradientUnits="userSpaceOnUse">
+      <stop offset="0" stop-color="#F8FBFF"/>
+      <stop offset="0.18" stop-color="#DDE3EA"/>
+      <stop offset="0.45" stop-color="#AEB7C2"/>
+      <stop offset="0.7" stop-color="#7F8994"/>
+      <stop offset="1" stop-color="#E9EEF5"/>
+    </linearGradient>
+
+    <linearGradient id="silverDark" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#5E6670"/>
+      <stop offset="1" stop-color="#2D333B"/>
+    </linearGradient>
+
+    <linearGradient id="cockpit" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#8DEBFF"/>
+      <stop offset="1" stop-color="#2E7CF6"/>
+    </linearGradient>
+
+    <linearGradient id="trackGlow" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0" stop-color="#FF2D55" stop-opacity="0"/>
+      <stop offset="0.45" stop-color="#FF2D55" stop-opacity="0.35"/>
+      <stop offset="1" stop-color="#FFD166" stop-opacity="0.9"/>
+    </linearGradient>
+
+    <linearGradient id="speed" x1="1" y1="0" x2="0" y2="0">
+      <stop offset="0" stop-color="#B8F3FF" stop-opacity="0.95"/>
+      <stop offset="0.45" stop-color="#6AAEFF" stop-opacity="0.35"/>
+      <stop offset="1" stop-color="#6AAEFF" stop-opacity="0"/>
+    </linearGradient>
+
+    <radialGradient id="spot" cx="0" cy="0" r="1" gradientUnits="userSpaceOnUse" gradientTransform="translate(930 62) rotate(90) scale(120 250)">
+      <stop stop-color="#3D4A77" stop-opacity="0.45"/>
+      <stop offset="1" stop-color="#3D4A77" stop-opacity="0"/>
+    </radialGradient>
+
+    <filter id="blurGlow" x="-50%" y="-50%" width="200%" height="200%">
+      <feGaussianBlur stdDeviation="8" result="b"/>
+      <feMerge>
+        <feMergeNode in="b"/>
+        <feMergeNode in="SourceGraphic"/>
+      </feMerge>
+    </filter>
+
+    <filter id="soft" x="-50%" y="-50%" width="200%" height="200%">
+      <feGaussianBlur stdDeviation="3" result="b"/>
+      <feMerge>
+        <feMergeNode in="b"/>
+        <feMergeNode in="SourceGraphic"/>
+      </feMerge>
+    </filter>
+
+    <style>
+      .carWrap {
+        animation: drive 7.5s cubic-bezier(.55,.08,.38,.98) infinite;
+      }
+
+      .wheelFast, .wheelSlow {
+        transform-box: fill-box;
+        transform-origin: center;
+      }
+
+      .wheelFast { animation: spin .42s linear infinite; }
+      .wheelSlow { animation: spin .65s linear infinite; }
+
+      .carFloat {
+        animation: float .34s ease-in-out infinite alternate;
+      }
+
+      .trailPulse {
+        animation: pulse 1s ease-in-out infinite alternate;
+      }
+
+      .bgA { animation: bgMoveA 2s linear infinite; }
+      .bgB { animation: bgMoveB 3s linear infinite; }
+      .bgC { animation: bgMoveA 4s linear infinite; }
+      .blink { animation: blink .9s ease-in-out infinite alternate; }
+
+      @keyframes spin {
+        from { transform: rotate(0deg); }
+        to { transform: rotate(360deg); }
+      }
+
+      @keyframes drive {
+        0%   { transform: translateX(-390px); }
+        12%  { transform: translateX(120px); }
+        50%  { transform: translateX(470px); }
+        88%  { transform: translateX(910px); }
+        100% { transform: translateX(1320px); }
+      }
+
+      @keyframes float {
+        from { transform: translateY(0px); }
+        to   { transform: translateY(-2px); }
+      }
+
+      @keyframes pulse {
+        from { opacity: .35; }
+        to   { opacity: 1; }
+      }
+
+      @keyframes blink {
+        from { opacity: .45; }
+        to   { opacity: 1; }
+      }
+
+      @keyframes bgMoveA {
+        from { transform: translateX(0); }
+        to   { transform: translateX(-260px); }
+      }
+
+      @keyframes bgMoveB {
+        from { transform: translateX(0); }
+        to   { transform: translateX(-340px); }
+      }
+
+      @media (prefers-reduced-motion: reduce) {
+        .carWrap, .wheelFast, .wheelSlow, .carFloat, .trailPulse, .bgA, .bgB, .bgC, .blink {
+          animation: none !important;
+        }
+      }
+    </style>
+  </defs>
+
+  <rect width="1200" height="280" rx="26" fill="url(#bg)"/>
+  <rect width="1200" height="280" rx="26" fill="url(#spot)"/>
+
+  <g opacity="0.25">
+    <rect class="bgA" x="70" y="44" width="180" height="4" rx="2" fill="#7F8FC7"/>
+    <rect class="bgB" x="350" y="72" width="250" height="4" rx="2" fill="#7F8FC7"/>
+    <rect class="bgC" x="800" y="52" width="160" height="4" rx="2" fill="#7F8FC7"/>
+    <rect class="bgA" x="1010" y="84" width="120" height="4" rx="2" fill="#7F8FC7"/>
+  </g>
+
+  <g filter="url(#soft)" opacity="0.95">
+    <text x="56" y="58" fill="#F4F7FF" font-size="28" font-family="Segoe UI, Arial, sans-serif" font-weight="800">FORMULA 1 //</text>
+    <text x="56" y="88" fill="#9FD4FF" font-size="14" font-family="Segoe UI, Arial, sans-serif" letter-spacing="4">SILVER MACHINE • FULL SPEED</text>
+  </g>
+
+  <g opacity="0.92">
+    <rect x="0" y="205" width="1200" height="42" fill="#242936"/>
+    <rect x="0" y="203" width="1200" height="5" fill="#ECEFF7"/>
+    <rect x="0" y="247" width="1200" height="33" fill="#141821"/>
+  </g>
+
+  <g opacity="0.95">
+    <rect x="32" y="221" width="78" height="7" rx="3.5" fill="#FFFFFF"/>
+    <rect x="152" y="221" width="78" height="7" rx="3.5" fill="#FFFFFF"/>
+    <rect x="272" y="221" width="78" height="7" rx="3.5" fill="#FFFFFF"/>
+    <rect x="392" y="221" width="78" height="7" rx="3.5" fill="#FFFFFF"/>
+    <rect x="512" y="221" width="78" height="7" rx="3.5" fill="#FFFFFF"/>
+    <rect x="632" y="221" width="78" height="7" rx="3.5" fill="#FFFFFF"/>
+    <rect x="752" y="221" width="78" height="7" rx="3.5" fill="#FFFFFF"/>
+    <rect x="872" y="221" width="78" height="7" rx="3.5" fill="#FFFFFF"/>
+    <rect x="992" y="221" width="78" height="7" rx="3.5" fill="#FFFFFF"/>
+    <rect x="1112" y="221" width="56" height="7" rx="3.5" fill="#FFFFFF"/>
+  </g>
+
+  <g class="carWrap">
+    <g class="trailPulse" filter="url(#blurGlow)">
+      <path d="M120 155 C 50 154, 0 160, -110 170" stroke="url(#speed)" stroke-width="12" stroke-linecap="round"/>
+      <path d="M98 139 C 10 139, -30 145, -150 150" stroke="url(#trackGlow)" stroke-width="4" stroke-linecap="round" opacity="0.9"/>
+      <path d="M90 170 C 15 170, -15 173, -130 184" stroke="url(#speed)" stroke-width="4" stroke-linecap="round" opacity="0.7"/>
+    </g>
+
+    <g class="carFloat">
+      <ellipse cx="228" cy="194" rx="128" ry="11" fill="#000000" opacity="0.35"/>
+
+      <g transform="translate(92 110)">
+        <path d="M18 48 L0 56 L18 68 L67 68 L92 50 L156 46 L182 58 L256 58 L271 49 L327 48 L334 40 L274 30 L243 12 L149 12 L117 24 L70 28 L48 40 Z" fill="url(#silverBody)"/>
+        <path d="M154 12 L197 12 L212 35 L146 35 Z" fill="url(#silverDark)"/>
+        <path d="M150 15 L191 15 L203 32 L151 32 Z" fill="url(#cockpit)" opacity="0.95"/>
+        <path d="M17 49 L58 49 L68 30 L36 30 Z" fill="#C2CAD4"/>
+        <path d="M269 31 L333 40 L331 48 L267 47 Z" fill="#DCE3EB"/>
+        <path d="M92 50 L128 50 L145 35 L108 35 Z" fill="#FF3B30"/>
+        <rect x="185" y="19" width="38" height="7" rx="3.5" fill="#F8FBFF" opacity="0.95"/>
+        <rect x="233" y="22" width="22" height="5" rx="2.5" fill="#FFE08A" opacity="0.95"/>
+        <path d="M18 68 H60 L48 77 H12 Z" fill="#0D1118"/>
+        <path d="M236 58 H294 L312 69 H244 Z" fill="#0D1118"/>
+
+        <g class="blink" filter="url(#soft)">
+          <circle cx="330" cy="42" r="4" fill="#8AE9FF"/>
+        </g>
+
+        <g class="wheelFast">
+          <circle cx="52" cy="78" r="27" fill="#0F1219"/>
+          <circle cx="52" cy="78" r="15" fill="#4C5563"/>
+          <circle cx="52" cy="78" r="4" fill="#E8EEF5"/>
+          <path d="M52 52 V104" stroke="#E8EEF5" stroke-width="3.2" stroke-linecap="round"/>
+          <path d="M26 78 H78" stroke="#E8EEF5" stroke-width="3.2" stroke-linecap="round"/>
+          <path d="M34 60 L70 96" stroke="#E8EEF5" stroke-width="2.5" stroke-linecap="round"/>
+          <path d="M70 60 L34 96" stroke="#E8EEF5" stroke-width="2.5" stroke-linecap="round"/>
+        </g>
+
+        <g class="wheelSlow">
+          <circle cx="252" cy="78" r="27" fill="#0F1219"/>
+          <circle cx="252" cy="78" r="15" fill="#4C5563"/>
+          <circle cx="252" cy="78" r="4" fill="#E8EEF5"/>
+          <path d="M252 52 V104" stroke="#E8EEF5" stroke-width="3.2" stroke-linecap="round"/>
+          <path d="M226 78 H278" stroke="#E8EEF5" stroke-width="3.2" stroke-linecap="round"/>
+          <path d="M234 60 L270 96" stroke="#E8EEF5" stroke-width="2.5" stroke-linecap="round"/>
+          <path d="M270 60 L234 96" stroke="#E8EEF5" stroke-width="2.5" stroke-linecap="round"/>
+        </g>
+      </g>
+    </g>
+  </g>
 </svg>
