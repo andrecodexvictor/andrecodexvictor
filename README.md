@@ -26,6 +26,8 @@ Full‑stack developer and applied AI specialist, focused on:
 - Web applications with TypeScript/JavaScript (Node.js, React, Next.js) and Python (Django).
 - Data‑driven decisions using SQL/NoSQL databases, vector databases (ChromaDB, Pinecone), RAG pipelines (document QA, business knowledge bases) and REST APIs for integrations.
 
+Currently deepening my studies in machine learning, neural networks and recursive learning loops.
+
 I combine sales and team‑leadership experience with technical solutions that improve small/medium business processes.
 
 **PT:**
@@ -35,6 +37,8 @@ Desenvolvedor full stack e especialista em IA aplicada, focado em:
 - Sistemas de IA agentic e fluxos de automação (LLMs, LangChain, LangGraph, CrewAI, n8n).
 - Aplicações web com TypeScript/JavaScript (Node.js, React, Next.js) e Python (Django).
 - Decisão orientada a dados usando bancos SQL/NoSQL, bancos vetoriais (ChromaDB, Pinecone), pipelines de RAG (QA de documentos, bases de conhecimento de negócio) e APIs REST para integrações.
+
+Atualmente aprofundo meus estudos em machine learning, redes neurais e loops de aprendizado recursivo.
 
 Combino experiência em vendas, gestão de equipes e marketing digital com soluções técnicas que melhoram processos de pequenas e médias empresas.
 
@@ -65,7 +69,8 @@ Combino experiência em vendas, gestão de equipes e marketing digital com solu�
   <img src="https://img.shields.io/badge/PostgreSQL-4169E1?style=for-the-badge&logo=postgresql&logoColor=white" />
   <img src="https://img.shields.io/badge/MongoDB-47A248?style=for-the-badge&logo=mongodb&logoColor=white" />
   <img src="https://img.shields.io/badge/Prisma-2D3748?style=for-the-badge&logo=prisma&logoColor=white" />
-  <img src="https://img.shields.io/badge/Vector%20DBs-ChromaDB_%26_Pinecone-FF6F00?style=for-the-badge&logo=google&logoColor=white" />
+  <img src="https://img.shields.io/badge/ChromaDB-Vector_DB-3DDC84?style=for-the-badge&logo=databricks&logoColor=white" />
+  <img src="https://img.shields.io/badge/Pinecone-Vector_DB-0398DC?style=for-the-badge&logo=azuredataexplorer&logoColor=white" />
   <img src="https://img.shields.io/badge/Pandas-150458?style=for-the-badge&logo=pandas&logoColor=white" />
   <img src="https://img.shields.io/badge/Docker-2496ED?style=for-the-badge&logo=docker&logoColor=white" />
 </p>
@@ -80,11 +85,19 @@ Combino experiência em vendas, gestão de equipes e marketing digital com solu�
   <img src="https://img.shields.io/badge/RAG-Document_QA_%26_KB-FF6F00?style=for-the-badge&logo=bookstack&logoColor=white" />
 </p>
 
-<!-- AI, ML & APIs badges -->
 <p align="center">
+  <!-- AI, ML & APIs -->
   <img src="https://img.shields.io/badge/Machine%20Learning-Scikit_learn_%26_TensorFlow-009688?style=for-the-badge&logo=tensorflow&logoColor=white" />
   <img src="https://img.shields.io/badge/Neural%20Networks-Custom_Specs-673AB7?style=for-the-badge&logo=keras&logoColor=white" />
   <img src="https://img.shields.io/badge/APIs-REST_%2F_JSON-2196F3?style=for-the-badge&logo=fastapi&logoColor=white" />
+</p>
+
+<p align="center">
+  <!-- Other frameworks (explored / learning) -->
+  <img src="https://img.shields.io/badge/Laravel-FF2D20?style=for-the-badge&logo=laravel&logoColor=white" />
+  <img src="https://img.shields.io/badge/Spring-6DB33F?style=for-the-badge&logo=spring&logoColor=white" />
+  <img src="https://img.shields.io/badge/Vue.js-4FC08D?style=for-the-badge&logo=vue.js&logoColor=white" />
+  <img src="https://img.shields.io/badge/Vite-646CFF?style=for-the-badge&logo=vite&logoColor=white" />
 </p>
 
 > **EN:** Main focus: TypeScript/Node, Python/Django, data (SQL/NoSQL, vector DBs such as ChromaDB and Pinecone, RAG pipelines) and agent frameworks (LangChain, LangGraph, CrewAI, n8n), exposed via REST APIs.  
@@ -97,14 +110,14 @@ Combino experiência em vendas, gestão de equipes e marketing digital com solu�
 **EN:**
 
 - Loop engineering and spec‑driven development for agents and apps, using Markdown specs (PRDs, task graphs, prompts) as the source of truth.  
-- Ongoing studies in machine learning and neural networks, including experiments with fine‑tuning, custom network specifications and feedback‑loop architectures.  
+- Ongoing studies in machine learning and neural networks, including experiments with fine‑tuning, custom network specifications, recursive learning loops and feedback‑loop architectures.  
 - Oracle Next Education (ONE) – Intelligent Agents immersion as part of my skillset in practical agent deployment.  
 - Personal projects connecting AI agents to sales and growth workflows.
 
 **PT:**
 
 - Loop engineering e spec‑driven development para agentes e aplicações, usando especificações em Markdown (PRDs, grafos de tarefas, prompts) como fonte de verdade.  
-- Estudos contínuos em machine learning e redes neurais, incluindo experimentos com fine‑tuning, especificações de redes customizadas e arquiteturas com loops de feedback.  
+- Estudos contínuos em machine learning e redes neurais, incluindo experimentos com fine‑tuning, especificações de redes customizadas, loops de aprendizado recursivo e arquiteturas com feedback.  
 - Imersão Oracle Next Education (ONE) em Agentes Inteligentes como parte do meu conjunto de competências em implantação prática de agentes.  
 - Projetos pessoais conectando agentes de IA com fluxos de vendas e crescimento.
 
@@ -116,13 +129,15 @@ Combino experiência em vendas, gestão de equipes e marketing digital com solu�
 
 - Adaptive Management Framework (Undergraduate thesis): management and automation framework for small/medium businesses, used as the base for agent toolkits.  
 - Agentic Toolkit for SMBs: modular agent and automation toolkit derived from the framework, with structured prompts, specs and Markdown docs.  
-- AI Agents & Automation Flows (n8n + LLMs): agents and workflows for sales, support and internal operations, integrating LLMs, APIs and databases.
+- AI Agents & Automation Flows (n8n + LLMs): agents and workflows for sales, support and internal operations, integrating LLMs, APIs and databases.  
+- 24 Podiums – F1‑inspired game prototype (WIP): web game exploring podium dynamics and serving as a playground for agentic reasoning and simulation – [24podiums.vercel.app](https://24podiums.vercel.app).
 
 **PT:**
 
 - Framework de Gestão Adaptativa (TCC): framework de gestão e automação para PMEs, usado como base para toolkits de agentes.  
 - Toolkit Agentic para PMEs: toolkit modular de agentes e automações derivado do framework, com prompts estruturados, especificações e docs em Markdown.  
-- Agentes de IA & Fluxos de Automação (n8n + LLMs): agentes e fluxos para vendas, atendimento e operações internas, integrando LLMs, APIs e bancos de dados.
+- Agentes de IA & Fluxos de Automação (n8n + LLMs): agentes e fluxos para vendas, atendimento e operações internas, integrando LLMs, APIs e bancos de dados.  
+- 24 Podiums – protótipo de jogo inspirado em Fórmula 1 (em desenvolvimento): jogo web que explora a dinâmica de pódios e funciona como playground para raciocínio agentic e simulação – [24podiums.vercel.app](https://24podiums.vercel.app).
 
 ---
 
@@ -140,37 +155,9 @@ Combino experiência em vendas, gestão de equipes e marketing digital com solu�
   <img src="https://github-readme-stats.vercel.app/api/top-langs/?username=andrecodexvictor&layout=compact&theme=radical" alt="Top Languages" />
 </p>
 
-<!-- F1-style car animation -->
+<!-- F1-style car animation (via external SVG) -->
 <p align="center">
-  <svg width="300" height="60" viewBox="0 0 300 60">
-    <!-- Track -->
-    <line x1="10" y1="40" x2="290" y2="40" stroke="#555" stroke-width="4" stroke-linecap="round" />
-    <!-- Car body -->
-    <rect id="car-body" x="10" y="25" width="40" height="15" rx="4" ry="4" fill="#FF0000" />
-    <!-- Front wing -->
-    <rect x="8" y="28" width="6" height="10" fill="#B00000" />
-    <!-- Rear wing -->
-    <rect x="48" y="23" width="8" height="12" fill="#B00000" />
-    <!-- Wheels -->
-    <circle cx="18" cy="42" r="5" fill="#000000" />
-    <circle cx="42" cy="42" r="5" fill="#000000" />
-    <!-- Animation: move car along the track -->
-    <animate
-      xlink:href="#car-body"
-      attributeName="x"
-      from="10"
-      to="250"
-      dur="3s"
-      repeatCount="indefinite"
-    />
-    <animate
-      xlink:href="#car-body"
-      attributeName="fill"
-      values="#FF0000;#FFFF00;#00FF00;#FF0000"
-      dur="6s"
-      repeatCount="indefinite"
-    />
-  </svg>
+  <img src="./f1-car.svg" alt="F1 streak car" />
 </p>
 
 ---
@@ -183,12 +170,8 @@ Combino experiência em vendas, gestão de equipes e marketing digital com solu�
 - ✉️ Email: `andrevictorandrade@gmail.com`  
 - 💼 LinkedIn: [André Victor](https://www.linkedin.com/in/andre-victor-andrade-oliveira-santos-22b142208)
 
-If you want to collaborate on AI agents, automation flows or full‑stack applications, feel free to reach out.
-
 **PT:**
 
 - 📍 Bahia, Brasil  
 - ✉️ E-mail: `andrevictorandrade@hotmail.com`  
 - 💼 LinkedIn: [André Victor](https://www.linkedin.com/in/andre-victor-andrade-oliveira-santos-22b142208)
-
-Se quiser colaborar em agentes de IA, automações ou aplicações web, é só chamar! 😊
