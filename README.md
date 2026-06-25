@@ -91,12 +91,14 @@ Combino experiência em vendas, gestão de equipes e marketing digital com solu�
 
 - Loop engineering and spec‑driven development for agents and apps, using Markdown specs (PRDs, task graphs, prompts) as the source of truth.  
 - Experiments with fine‑tuning, ML pipelines and a new neural network specification combining feedback loops and agent orchestration.  
+- Oracle Next Education (ONE) – Intelligent Agents immersion as part of my skillset in practical agent deployment.  
 - Personal projects connecting AI agents to sales and growth workflows.
 
 **PT:**
 
 - Loop engineering e spec‑driven development para agentes e aplicações, usando especificações em Markdown (PRDs, grafos de tarefas, prompts) como fonte de verdade.  
 - Experimentos com fine‑tuning, pipelines de ML e uma nova especificação de rede neural combinando loops de feedback e orquestração agentic.  
+- Imersão Oracle Next Education (ONE) em Agentes Inteligentes como parte do meu conjunto de competências em implantação prática de agentes.  
 - Projetos pessoais conectando agentes de IA com fluxos de vendas e crescimento.
 
 ---
@@ -107,15 +109,13 @@ Combino experiência em vendas, gestão de equipes e marketing digital com solu�
 
 - Adaptive Management Framework (Undergraduate thesis): management and automation framework for small/medium businesses, used as the base for agent toolkits.  
 - Agentic Toolkit for SMBs: modular agent and automation toolkit derived from the framework, with structured prompts, specs and Markdown docs.  
-- AI Agents & Automation Flows (n8n + LLMs): agents and workflows for sales, support and internal operations, integrating LLMs, APIs and databases.  
-- Oracle Next Education (ONE) – Intelligent Agents: side project exploring HR use cases with Telegram, MySQL and RAG.
+- AI Agents & Automation Flows (n8n + LLMs): agents and workflows for sales, support and internal operations, integrating LLMs, APIs and databases.
 
 **PT:**
 
 - Framework de Gestão Adaptativa (TCC): framework de gestão e automação para PMEs, usado como base para toolkits de agentes.  
 - Toolkit Agentic para PMEs: toolkit modular de agentes e automações derivado do framework, com prompts estruturados, especificações e docs em Markdown.  
-- Agentes de IA & Fluxos de Automação (n8n + LLMs): agentes e fluxos para vendas, atendimento e operações internas, integrando LLMs, APIs e bancos de dados.  
-- Oracle Next Education (ONE) – Agentes Inteligentes: projeto paralelo explorando casos de uso de RH com Telegram, MySQL e RAG.
+- Agentes de IA & Fluxos de Automação (n8n + LLMs): agentes e fluxos para vendas, atendimento e operações internas, integrando LLMs, APIs e bancos de dados.
 
 ---
 
