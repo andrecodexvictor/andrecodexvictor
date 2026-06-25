@@ -1,0 +1,29 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="300" height="60" viewBox="0 0 300 60">
+  <!-- Track -->
+  <line x1="10" y1="40" x2="290" y2="40" stroke="#555" stroke-width="4" stroke-linecap="round" />
+  <!-- Car body -->
+  <rect id="car-body" x="10" y="25" width="40" height="15" rx="4" ry="4" fill="#FF0000" />
+  <!-- Front wing -->
+  <rect x="8" y="28" width="6" height="10" fill="#B00000" />
+  <!-- Rear wing -->
+  <rect x="48" y="23" width="8" height="12" fill="#B00000" />
+  <!-- Wheels -->
+  <circle cx="18" cy="42" r="5" fill="#000000" />
+  <circle cx="42" cy="42" r="5" fill="#000000" />
+  <!-- Animation: move car along the track -->
+  <animate
+    xlink:href="#car-body"
+    attributeName="x"
+    from="10"
+    to="250"
+    dur="3s"
+    repeatCount="indefinite"
+  />
+  <animate
+    xlink:href="#car-body"
+    attributeName="fill"
+    values="#FF0000;#FFFF00;#00FF00;#FF0000"
+    dur="6s"
+    repeatCount="indefinite"
+  />
+</svg>
