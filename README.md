@@ -64,7 +64,7 @@ Combino experiência em vendas, gestão de equipes e marketing digital com solu�
 </p>
 
 <p align="center">
-  <!-- Data & infra -->
+  <!-- Data & vector DBs -->
   <img src="https://img.shields.io/badge/MySQL-4479A1?style=for-the-badge&logo=mysql&logoColor=white" />
   <img src="https://img.shields.io/badge/PostgreSQL-4169E1?style=for-the-badge&logo=postgresql&logoColor=white" />
   <img src="https://img.shields.io/badge/MongoDB-47A248?style=for-the-badge&logo=mongodb&logoColor=white" />
@@ -72,7 +72,6 @@ Combino experiência em vendas, gestão de equipes e marketing digital com solu�
   <img src="https://img.shields.io/badge/ChromaDB-Vector_DB-3DDC84?style=for-the-badge&logo=databricks&logoColor=white" />
   <img src="https://img.shields.io/badge/Pinecone-Vector_DB-0398DC?style=for-the-badge&logo=azuredataexplorer&logoColor=white" />
   <img src="https://img.shields.io/badge/Pandas-150458?style=for-the-badge&logo=pandas&logoColor=white" />
-  <img src="https://img.shields.io/badge/Docker-2496ED?style=for-the-badge&logo=docker&logoColor=white" />
 </p>
 
 <p align="center">
@@ -89,7 +88,7 @@ Combino experiência em vendas, gestão de equipes e marketing digital com solu�
   <!-- AI, ML & APIs -->
   <img src="https://img.shields.io/badge/Machine%20Learning-Scikit_learn_%26_TensorFlow-009688?style=for-the-badge&logo=tensorflow&logoColor=white" />
   <img src="https://img.shields.io/badge/Neural%20Networks-Custom_Specs-673AB7?style=for-the-badge&logo=keras&logoColor=white" />
-  <img src="https://img.shields.io/badge/APIs-REST_%2F_JSON-2196F3?style=for-the-badge&logo=fastapi&logoColor=white" />
+  <img src="https://img.shields.io/badge/FastAPI-APIs-009688?style=for-the-badge&logo=fastapi&logoColor=white" />
 </p>
 
 <p align="center">
@@ -155,9 +154,9 @@ Combino experiência em vendas, gestão de equipes e marketing digital com solu�
   <img src="https://github-readme-stats.vercel.app/api/top-langs/?username=andrecodexvictor&layout=compact&theme=radical" alt="Top Languages" />
 </p>
 
-<!-- F1-style car animation (via external SVG) -->
+<!-- F1-style car image (PNG or GIF) -->
 <p align="center">
-  <img src="./f1-car.svg" alt="F1 streak car" />
+  <img src="./f1-car.png" alt="F1 streak car" />
 </p>
 
 ---
