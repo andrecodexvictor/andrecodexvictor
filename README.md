@@ -26,7 +26,7 @@ Full‑stack developer and applied AI specialist, focused on:
 - Web applications with TypeScript/JavaScript (Node.js, React, Next.js) and Python (Django).
 - Data‑driven decisions using SQL/NoSQL databases, vector databases (ChromaDB, Pinecone), RAG pipelines (document QA, business knowledge bases) and REST APIs for integrations.
 
-Currently deepening my studies in machine learning, neural networks and recursive learning loops.
+Currently deepening my studies in machine learning, neural networks and recursive learning loops.  
 
 I combine sales and team‑leadership experience with technical solutions that improve small/medium business processes.
 
