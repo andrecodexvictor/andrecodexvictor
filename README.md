@@ -144,7 +144,7 @@ Combino experiência em vendas, gestão de equipes e marketing digital com solu�
 
 <p align="center">
   <img src="https://github-readme-stats.vercel.app/api?username=andrecodexvictor&show_icons=true&theme=radical" alt="GitHub Stats" />
-</p> force p1
+</p>
 
 <p align="center">
   <img src="https://github-readme-streak-stats.herokuapp.com/?user=andrecodexvictor&theme=radical" alt="GitHub Streak" />
@@ -152,7 +152,7 @@ Combino experiência em vendas, gestão de equipes e marketing digital com solu�
 
 <p align="center">
   <img src="https://github-readme-stats.vercel.app/api/top-langs/?username=andrecodexvictor&layout=compact&theme=radical" alt="Top Languages" />
-</p> forcep1
+</p> 
 
 
 <p align="center">
